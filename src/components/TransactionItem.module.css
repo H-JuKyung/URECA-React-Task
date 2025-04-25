@@ -1,0 +1,54 @@
+.itemIncome,
+.itemExpense {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--fs16) var(--fs12);
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.deleteBtn {
+  padding: 0 var(--fs12) 0 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: var(--fs16);
+}
+
+.itemIncome {
+  border-right: 4px solid #2ecc71;
+}
+
+.itemExpense {
+  border-right: 4px solid #e74c3c;
+}
+
+.description {
+  flex: 1;
+  font-size: var(--fs16);
+}
+
+.income {
+  color: #2ecc71;
+}
+
+.expense {
+  color: #e74c3c;
+}
+
+.amount {
+  width: 100px;
+  font-weight: bold;
+  text-align: right;
+  font-size: var(--fs16);
+}
+
+.date {
+  width: 100px;
+  text-align: right;
+  font-size: var(--fs12);
+  color: #888;
+}

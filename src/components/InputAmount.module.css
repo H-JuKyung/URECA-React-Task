@@ -1,0 +1,21 @@
+.con {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  margin: var(--fs8) 0;
+  padding: var(--fs12) var(--fs8);
+  font-size: var(--fs16);
+  border: 1px solid #ccc;
+  box-shadow: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+  border: 1px solid #60b5ff;
+  box-shadow: 0 0 0 2px rgba(96, 181, 255, 0.3);
+}

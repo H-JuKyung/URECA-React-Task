@@ -1,0 +1,27 @@
+.con {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs8);
+}
+
+.title {
+  font-size: var(--fs24);
+  font-weight: bold;
+  margin-bottom: var(--fs8);
+}
+
+.addBtn {
+  outline: none;
+  border: none;
+  background-color: #60b5ff;
+  padding: var(--fs12) var(--fs8);
+  font-size: var(--fs16);
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s;
+  border-radius: var(--fs4);
+}
+
+.addBtn:hover {
+  background-color: #3d90d7;
+}
