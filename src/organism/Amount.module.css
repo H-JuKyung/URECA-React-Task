@@ -40,3 +40,16 @@
 .income {
   border-right: 2px solid #ccc;
 }
+
+@media (max-width: 600px) {
+  .con {
+    padding: var(--fs16) var(--fs16);
+  }
+
+  .income h2,
+  .income p,
+  .expense h2,
+  .expense p {
+    font-size: var(--fs16);
+  }
+}

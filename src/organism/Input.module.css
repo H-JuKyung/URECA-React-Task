@@ -1,13 +1,52 @@
 .con {
   display: flex;
   flex-direction: column;
-  gap: var(--fs8);
+  height: 100%;
+  gap: var(--fs16);
 }
 
 .title {
   font-size: var(--fs24);
   font-weight: bold;
   margin-bottom: var(--fs8);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs8);
+}
+
+.inputBox {
+  flex-grow: 1;
+  margin: var(--fs8) 0;
+  padding: var(--fs16) var(--fs8);
+  font-size: var(--fs16);
+  border: 1px solid #ccc;
+  box-shadow: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.inputBox:hover,
+.inputBox:focus {
+  outline: none;
+  border: 1px solid #60b5ff;
+  box-shadow: 0 0 0 2px rgba(96, 181, 255, 0.3);
+}
+
+.radioGroup {
+  display: flex;
+  gap: var(--fs16);
+  align-items: center;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--fs8);
+  font-size: var(--fs14);
+  cursor: pointer;
+  accent-color: #60b5ff;
 }
 
 .addBtn {
@@ -18,10 +57,38 @@
   font-size: var(--fs16);
   color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  transition: color 0.3s;
+  transition: 0.3s;
   border-radius: var(--fs4);
 }
 
 .addBtn:hover {
   background-color: #3d90d7;
+}
+
+@media (max-width: 600px) {
+  .con {
+    gap: 0;
+  }
+
+  .title {
+    font-size: var(--fs16);
+  }
+
+  .labelDesc {
+    font-size: var(--fs14);
+  }
+
+  .inputBox,
+  .radioLabel,
+  .addBtn {
+    font-size: var(--fs12);
+  }
+
+  .inputBox {
+    padding: var(--fs10) var(--fs8);
+  }
+
+  .addBtn {
+    padding: var(--fs8) var(--fs4);
+  }
 }

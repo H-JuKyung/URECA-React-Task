@@ -27,8 +27,18 @@
 }
 
 .description {
-  flex: 1;
+  flex: 2;
   font-size: var(--fs16);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: var(--fs4);
+}
+
+.income,
+.expense {
+  font-size: var(--fs16);
+  flex: 1.5;
 }
 
 .income {
@@ -39,16 +49,23 @@
   color: #e74c3c;
 }
 
-.amount {
-  width: 100px;
-  font-weight: bold;
-  text-align: right;
-  font-size: var(--fs16);
-}
-
 .date {
   width: 100px;
   text-align: right;
   font-size: var(--fs12);
   color: #888;
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .deleteBtn,
+  .description,
+  .income,
+  .expense {
+    font-size: var(--fs12);
+  }
+
+  .date {
+    font-size: var(--fs8);
+  }
 }

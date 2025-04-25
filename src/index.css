@@ -1,11 +1,11 @@
 @charset "UTF-8";
-@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
-    format('woff');
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -17,14 +17,16 @@
 }
 
 :root {
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard-Regular";
   font-weight: 400;
   font-style: normal;
 
   /* Fonts */
   --fs4: 4px;
   --fs8: 8px;
+  --fs10: 10px;
   --fs12: 12px;
+  --fs14: 14px;
   --fs16: 16px;
   --fs18: 18px;
   --fs20: 20px;

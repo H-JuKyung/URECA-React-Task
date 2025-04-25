@@ -48,3 +48,20 @@
   background-color: #2ecc71;
   color: white;
 }
+
+@media (max-width: 600px) {
+  .con {
+    padding: var(--fs24);
+  }
+
+  .title {
+    font-size: var(--fs18);
+    margin-bottom: var(--fs24);
+  }
+
+  .cancelBtn,
+  .okBtn {
+    font-size: var(--fs12);
+    padding: var(--fs4) var(--fs16);
+  }
+}

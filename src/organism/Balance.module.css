@@ -29,3 +29,20 @@
 .minus {
   color: #e74c3c;
 }
+
+@media (max-width: 600px) {
+  .con {
+    flex-direction: row;
+    padding: var(--fs16) var(--fs16);
+    gap: var(--fs8);
+  }
+
+  .con h2,
+  .plus,
+  .minus,
+  .zero {
+    font-size: var(--fs16);
+    text-align: center;
+    margin-bottom: 0;
+  }
+}

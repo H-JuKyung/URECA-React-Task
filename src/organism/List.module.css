@@ -25,7 +25,23 @@ p {
 }
 
 .scrollArea {
-  min-height: 200px;
-  max-height: 250px;
+  max-height: 300px;
   overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+  .con {
+    height: 150px;
+  }
+  .title {
+    font-size: var(--fs16);
+  }
+
+  p {
+    font-size: var(--fs14);
+  }
+
+  .scrollArea {
+    max-height: 100px;
+  }
 }
